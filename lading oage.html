@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* ---- ESTILOS PARA EL LOGO ---- */
+    .logo {
+      display: flex;             /* Centra horizontalmente */
+      justify-content: center;
+      margin-top: 20px;          /* Espacio arriba */
+    }
+
+    .logo img {
+      width: 250px;              /* Ajusta el tamaño grande aquí */
+      height: auto;              /* Mantiene la proporción */
+    }
+  </style>
+
+</head>
+
+  <!-- LOGO GRANDE ARRIBA -->
+  <div class="logo">
+    <!-- Reemplaza "logo.png" por la ruta de tu logo -->
+    <img src="logo serio.jpeg" alt="Mi Logo">
+  </div>
+  
+</body>
+</html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas Aromáticas & Artesanales</title>
+    <style>
+        /* Tipografía suave y colores pastel */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafd;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #e8f0f8;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #335577;
+            font-weight: 500;
+        }
+
+        /* Banner */
+        .banner {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #cfe8f7, #f8fafd);
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            color: #224466;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            color: #446688;
+        }
+
+        .btn-accion {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6caee0;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Slider */
+        .slider {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .slide {
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+
+        .slide img {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        .slide button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6caee0;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Ofertas */
+        .ofertas {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f0f6fb;
+        }
+
+        .oferta-card {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 300px;
+        }
+
+        .oferta-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .oferta-card button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6caee0;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Contacto */
+        .contacto {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-family: inherit;
+        }
+
+        form button {
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6caee0;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e8f0f8;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .slider-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Velas Artesanales para tu Bienestar</h1>
+        <p>Calma y ternura en cada detalle</p>
+        <button class="btn-accion">Compra Ahora</button>
+    </section>
+
+    <!-- Slider de productos -->
+    <section class="slider" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="Velas Encanto Frutal.jpg" alt="Vela Aromática">
+                <button>Ver Producto</button>
+            </div>
+            <div class="slide">
+                <img src="7b8d3f08-77c7-4592-aab6-3878483ba488.jpg" alt="Vela Artesanal">
+                <button>Ver Producto</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ofertas -->
+    <section class="ofertas" id="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="oferta-card">
+            <img src="9d55ea27-a75a-44e4-88ce-23c3e7db6aee.jpg" alt="Oferta Velas">
+            <h3>Pack Relajación</h3>
+            <button>Ver Oferta</button>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom - Velas Artesanales</title>
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f2; /* color cálido pastel */
+      color: #5a3d2b;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: #ffe4d6; /* rosa pastel */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 50px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #7a4a32;
+      animation: slideIn 1.2s ease;
+    }
+
+    /* ====== SLIDER ====== */
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.7s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+    }
+
+    /* ====== BOTONES SLIDER ====== */
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .btn {
+      background: rgba(255, 182, 157, 0.8); /* naranja pastel translúcido */
+      border: none;
+      padding: 12px 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 18px;
+      color: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background: #ff9f80;
+      transform: scale(1.1);
+    }
+
+    /* ====== ANIMACIONES ====== */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideIn {
+      from {transform: translateX(-100px); opacity:0;}
+      to {transform: translateX(0); opacity:1;}
+    }
+
+    /* ====== PIE DE PÁGINA ====== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffe4d6;
+      margin-top: 40px;
+      border-top: 2px solid #f5bca8;
+    }
+
+    footer p {
+      margin: 0;
+      color: #7a4a32;
+    }
+  </style>
+</head>
+
+  <!-- ====== SLIDER ====== -->
+  <div class="slider">
+    <div class="slides">
+      <!-- 💡 Cambia estas imágenes por tus fotos de velas -->
+      <div class="slide"><img src="9d55ea27-a75a-44e4-88ce-23c3e7db6aee.jpg" alt="Vela 1"></div>
+      <div class="slide"><img src="Velas artesanales.jpg" alt="Vela 2"></div>
+      <div class="slide"><img src="Conheçam nossos aromas e se apaixonem pelo cuidado….jpg" alt="Vela 3"></div>
+    </div>
+
+    <!-- Botones del slider -->
+    <div class="controls">
+      <button class="btn prev">⟨</button>
+      <button class="btn next">⟩</button>
+    </div>
+  </div>
+  
+  <!-- ====== JAVASCRIPT PARA SLIDER ====== -->
+  <script>
+    const slides = document.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + slide.length) % slide.length;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => showSlide(index - 1));
+    nextBtn.addEventListener('click', () => showSlide(index + 1));
+
+    // Cambio automático cada 5s
+    setInterval(() => showSlide(index + 1), 5000);
+  </script>
+    <!-- ====== PIE DE PÁGINA ====== -->
+  <footer>
+<p>© 2025 Velas Aromáticas & Artesanales. Todos los derechos reservados.</p>
+    <p>✨ Bloom - Ilumina tu espacio, florece tu alma ✨</p>
+  </footer>
+
+
+</body>
+</html>
+
+
